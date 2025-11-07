@@ -265,7 +265,7 @@
             chatWindow.classList.remove('active');
         });
 
-        // Start chat functionality
+      
         startChatBtn.addEventListener('click', function() {
 
             const phoneNumber = '+254723565739';
@@ -275,21 +275,21 @@
             window.open(whatsappUrl, '_blank');
         });
 
-        // Close chat when clicking outside
+    
         document.addEventListener('click', function(event) {
             if (!chatWindow.contains(event.target) && !whatsappBtn.contains(event.target)) {
                 chatWindow.classList.remove('active');
             }
         });
 
-        // Prevent chat window from closing when clicking inside it
+
         chatWindow.addEventListener('click', function(event) {
             event.stopPropagation();
         });
 
-         // Initialize image fallbacks and hover effects
+
     document.addEventListener('DOMContentLoaded', function() {
-        // Add fallback for images
+        
         const practiceImages = document.querySelectorAll('.practice-img');
         practiceImages.forEach(img => {
             img.onerror = function() {
